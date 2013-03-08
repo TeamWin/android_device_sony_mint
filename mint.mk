@@ -19,6 +19,9 @@ $(call inherit-product, device/sony/blue-common/blue.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/sony/mint/overlay
 
+PRODUCT_COPY_FILES += \
+    device/sony/mint/zImage:kernel
+
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
